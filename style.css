@@ -1,6 +1,7 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #333;
+  color: #fff;
 }
 
 .container {
@@ -10,7 +11,7 @@ body {
 }
 
 
-button {
+.btn {
   padding: 10px 20px;
   font-size: 16px;
   background-color: #007bff;
@@ -20,6 +21,15 @@ button {
   border-radius: 10px;
 }
 
-button:hover {
+.btn:hover {
   background-color: #0056b3;
+}
+
+.quote {
+  font-style: italic;
+}
+
+.quote::after,
+.quote::before {
+  content: '"';
 }

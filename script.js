@@ -1,13 +1,17 @@
-const quotes = ["TheThe only way to go great work is to love what you do. - Steve Jobs", "Innovation distinguishes between a leader and a follower. - Steve Jobs", "Your time is limited, so don't waste it living someone else's life. - Steve Jobs"];
+
 
 const quoteElement = document.getElementById("quote");
+const quoteAuthorElement = document.getElementById("quote-author");
 const generateBtn = document.getElementById("generate-btn");
 
 function generateRandomQuote() {
   const randomIndex = Math.floor(Math.random() * quotes.length);
-  console.log(randomIndex);
   const randomQuote = quotes[randomIndex];
-  quoteElement.textContent = randomQuote;
+
+  const { quote, author } = randomQuote;
+
+  quoteElement.textContent = quote;
+  quoteAuthorElement.textContent = author;
 }
 
 generateBtn.addEventListener("click", generateRandomQuote);
