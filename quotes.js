@@ -77,3 +77,5 @@ const quotes = [
     author: "Dan Reeves",
   },
 ];
+
+export default quotes
